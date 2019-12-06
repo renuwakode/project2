@@ -1,0 +1,57 @@
+ 1  apt-get update
+    2  apt-get install apt-transport-https ca-certificates curl software-properties-common -y
+    3  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add 
+    4  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    5  apt-get update
+    6  apt-get install docker-ce
+    7  systemctl start docker
+    8  systemctl enable docker
+    9  useradd manager
+   10  passwd
+   11  ifconfig
+   12  nano /etc/hosts
+   13  usermod -aG docker manager
+   14  su manger
+   15  su manager
+   16  docker --version
+   17  systemctl start docker
+   18  systemctl status docker
+   19  docker info
+   20  docker run hello-world
+   21  docker pull ubuntu
+   22  docker run ubuntu
+   23  docker run -it ubuntu
+   24  docker commit -m "added mariadb-server" -a "somename" 4ebcdc8ad5a2 root/centos-mariadb
+   25  docker images
+   26  docker ps -a
+   27  ps -l
+   28  docker --version
+   29  systemctl start docker
+   30  systemctl status docker
+   31  docker build -t ubuntu .
+   32  docker run --name durga -it ubuntu
+   33  apt-get update
+   34  apt-get install openjdk-8-jdk
+   35  wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+   36  echo deb http://pkg.jenkins.io/debian-stable binary/| sudo tee /etc/apt/sources.list.d/jenkins.list
+   37  sudo apt-get update
+   38  sudo apt-get install jenkins
+   39  sudo systemctl start jenkins
+   40  sudo systemctl status jenkins
+   41  cat /var/lib/jenkins/secrets/initialAdminPassword
+   42  git --version
+   43  mkdir project
+   44  cd project
+   45  nano hello.c
+   46  git add -A
+   47  git init
+   48  git add -A
+   49  git commit
+   50  git config --global user.name "Durga0397"
+   51  git config --global user.email durga0397sawant@gmail.com
+   52  git commit
+   53  git push https://github.com/Durga0397/durga.git
+   54  git push https://github.com/Durga0397/durga.git master
+   55  git pull https://github.com/Durga0397/durga.git
+   56  git push https://github.com/Durga0397/durga.git master
+   57  history
